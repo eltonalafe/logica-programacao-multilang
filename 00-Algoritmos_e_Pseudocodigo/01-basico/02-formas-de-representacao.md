@@ -37,10 +37,9 @@ O fluxograma é a representação **visual** de um algoritmo. Ele utiliza símbo
 #### Exemplo: Fluxograma do Algoritmo "CalcularMedia"
 
 > [!TIP]
-> Desenhar fluxogramas em Markdown é limitado. A melhor prática é usar uma ferramenta online e gratuita como o **[diagrams.net](https://app.diagrams.net/)** (antigo draw.io) para criar seu fluxograma, exportar como uma imagem (.png ou .svg) e adicioná-la aqui.
+> A melhor prática é usar uma ferramenta online e gratuita como o **[diagrams.net](https://app.diagrams.net/)** (antigo draw.io) para criar seu fluxograma.
 
-![Fluxograma do Algoritmo CalcularMedia](caminho/para/sua/imagem.png)  
-_<-- Aqui você colocaria a imagem do seu fluxograma depois de criá-la._
+![Fluxograma do Algoritmo CalcularMedia](../_assets/fluxograma-calcular-media.png)
 
 ---
 
