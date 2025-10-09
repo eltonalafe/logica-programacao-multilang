@@ -1,13 +1,12 @@
-# 🚀 Lógica de Programação e Estudo de Linguagens [Multi-Lang]
+# 🚀 Lógica de Programação - Fundamentos Multi-Linguagem
 
-Bem-vindo(a) ao meu repositório de estudos!  
-O objetivo deste projeto é documentar e solidificar minha jornada de aprendizado em lógica de programação e na sintaxe de diferentes linguagens, utilizando o GitHub Codespaces como meu ambiente de desenvolvimento.
+Bem-vindo(a) ao meu repositório de estudos! O objetivo deste projeto é construir uma base sólida em lógica de programação e, em seguida, aplicar esses mesmos conceitos em diferentes linguagens de programação para fins de aprendizado e comparação.
 
-Este espaço é organizado como um roteiro de estudos, separando a teoria fundamental da prática aplicada em cada tecnologia.
+Este espaço é organizado como um roteiro de estudos, separando a **base teórica (agnóstica de linguagem)** da **implementação prática** em cada tecnologia, utilizando o GitHub Codespaces como ambiente de desenvolvimento.
 
 ## 💻 Tecnologias em Foco
 
-Atualmente, o foco de estudo está nas seguintes linguagens:
+Atualmente, o foco de estudo está na aplicação dos conceitos nas seguintes linguagens:
 
 <p align="left">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
@@ -18,60 +17,29 @@ Atualmente, o foco de estudo está nas seguintes linguagens:
 
 ## 📂 Estrutura do Repositório
 
-O projeto está dividido em três grandes áreas para facilitar a consulta e a prática:
+O projeto é dividido em duas áreas principais, refletindo a filosofia de "aprender o conceito, depois a ferramenta":
 
-### `📁 00-Logica_de_Programacao/`
+### `📁 00-Algoritmos_e_Pseudocodigo/`
 
-A base de tudo. Nesta pasta, o foco é o desenvolvimento do raciocínio lógico, independente de qualquer linguagem. É o lugar para praticar algoritmos, pseudocódigo e fluxogramas.
+A fundação de tudo. Esta pasta contém a **teoria** da programação, abordada de forma agnóstica. Aqui você encontrará explicações sobre algoritmos, pseudocódigo, estruturas de dados e os pilares da lógica, organizados por nível de dificuldade (`basico`, `intermediario`, `avancado`).
 
-### `📁 01-Estudo_Linguagens/`
+### `📁 0X-Implementacao-<Linguagem>/`
 
-A área de aprendizado de sintaxe. Para cada linguagem, há uma estrutura de pastas que segue um roteiro de tópicos fundamentais, detalhados abaixo. É o meu "caderno" de anotações e códigos de exemplo.
+A aplicação prática. Para cada tecnologia, há uma pasta dedicada (ex: `01-Implementacao-Javascript`, `02-Implementacao-Python`, etc.). A estrutura interna de cada uma delas espelha a da pasta de teoria, permitindo implementar os mesmos algoritmos e conceitos em diferentes sintaxes, lado a lado.
 
-### `📁 02-Desafios_Praticos/`
+## 🎯 Acompanhando o Progresso
 
-Onde o conhecimento é colocado à prova. Esta seção contém desafios de programação para cada linguagem, permitindo aplicar os conceitos aprendidos na pasta de estudos em problemas práticos.
+O progresso deste projeto não é mais acompanhado por uma lista manual neste README. Em vez disso, adotei uma abordagem mais profissional e dinâmica utilizando o sistema de **Issues** do GitHub.
 
-## 📚 Estrutura de Conteúdo
+**[➡️ Clique aqui para ver o quadro de tarefas e o progresso do projeto na aba Issues](https://github.com/eltonalafe/logica-programacao-multilang/issues)**
 
-Cada linguagem na pasta `01-Estudo_Linguagens` segue a seguinte estrutura de tópicos para um aprendizado consistente.
-
-| Tema                         | Descrição                               |
-| :--------------------------- | :-------------------------------------- |
-| **01. Variáveis e Tipos**    | Armazenamento e manipulação de dados    |
-| **02. Operadores**           | Cálculos, comparações e lógica booleana |
-| **03. Condicionais**         | Estruturas de decisão                   |
-| **04. Loops**                | Estruturas de repetição                 |
-| **05. Funções**              | Reutilização de código                  |
-| **06. Arrays / Listas**      | Coleções de dados                       |
-| **07. Strings**              | Manipulação de texto                    |
-| **08. Estruturas Compostas** | Objetos, dicionários e classes          |
-| **09. Tratamento de Erros**  | `try/catch` e controle de exceções      |
-| **10. Desafios**             | Aplicações práticas                     |
-
-## 🎯 Meu Progresso
-
-Acompanhamento dos tópicos de estudo concluídos.
-
-### Fundamentos
-
-- [ ] 1.  Algoritmos e Pseudocódigo
-
-### Tópicos por Linguagem
-
-- [x] 1.  Variáveis, Tipos e I/O
-- [ ] 2.  Operadores e Lógica Booleana
-- [ ] 3.  Estruturas Condicionais
-- [ ] 4.  Estruturas de Repetição
-- [ ] 5.  Arrays (Vetores e Matrizes)
-- [ ] 6.  Strings
-- [ ] 7.  Funções e Escopo
-- [ ] 8.  Estruturas de Dados
-- [ ] 9.  Estruturas Compostas (Objetos, Dicionários, etc.)
-- [ ] 10. Tratamento de Erros
+Utilizo as seguintes `labels` de status para organizar o fluxo de trabalho:
+* `status: to-do`: Tarefa ou tópico que ainda não foi iniciado.
+* `status: in-progress`: O que estou estudando ou implementando neste momento.
+* `status: done`: Tópico ou implementação concluída.
 
 ## ✍️ Autor
 
-** Elton Alafe **  
+**Elton Alafe**  
 📘 Análise e Desenvolvimento de Sistemas  
 💼 Foco em Back-End e fundamentos sólidos de programação.
