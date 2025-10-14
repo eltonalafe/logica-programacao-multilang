@@ -19,7 +19,7 @@ Atualmente, o foco de estudo está na aplicação dos conceitos nas seguintes li
 
 O projeto é dividido em duas áreas principais, refletindo a filosofia de "aprender o conceito, depois a ferramenta":
 
-### `📁 00-Algoritmos_e_Pseudocodigo/`
+### `📁 00-Algoritmos-e-Pseudocodigo/`
 
 A fundação de tudo. Esta pasta contém a **teoria** da programação, abordada de forma agnóstica. Aqui você encontrará explicações sobre algoritmos, pseudocódigo, estruturas de dados e os pilares da lógica, organizados por nível de dificuldade (`basico`, `intermediario`, `avancado`).
 
@@ -34,9 +34,10 @@ O progresso deste projeto não é mais acompanhado por uma lista manual neste RE
 **[➡️ Clique aqui para ver o quadro de tarefas e o progresso do projeto na aba Issues](https://github.com/eltonalafe/logica-programacao-multilang/issues)**
 
 Utilizo as seguintes `labels` de status para organizar o fluxo de trabalho:
-* `status: to-do`: Tarefa ou tópico que ainda não foi iniciado.
-* `status: in-progress`: O que estou estudando ou implementando neste momento.
-* `status: done`: Tópico ou implementação concluída.
+
+- `status: to-do`: Tarefa ou tópico que ainda não foi iniciado.
+- `status: in-progress`: O que estou estudando ou implementando neste momento.
+- `status: done`: Tópico ou implementação concluída.
 
 ## ✍️ Autor
 
