@@ -19,7 +19,7 @@ Atualmente, o foco de estudo está na aplicação dos conceitos nas seguintes li
 
 O projeto é dividido em duas áreas principais, refletindo a filosofia de "aprender o conceito, depois a ferramenta":
 
-### `📁 00-Algoritmos_e_Pseudocodigo/`
+### `📁 00-Algoritmos-e-Pseudocodigo/`
 
 A fundação de tudo. Esta pasta contém a **teoria** da programação, abordada de forma agnóstica. Aqui você encontrará explicações sobre algoritmos, pseudocódigo, estruturas de dados e os pilares da lógica, organizados por nível de dificuldade (`basico`, `intermediario`, `avancado`).
 
