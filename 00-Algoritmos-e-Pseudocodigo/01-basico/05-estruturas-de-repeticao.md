@@ -14,39 +14,28 @@ O bloco de código interno continuará a ser executado repetidamente **enquanto*
 
 > [!WARNING] > **Cuidado com os Laços Infinitos!** Se a condição de um laço `Enquanto` nunca se tornar falsa, o programa ficará preso executando aquele bloco de código para sempre. É essencial garantir que algo dentro do laço altere a condição em algum momento.
 
-**Estrutura em Pseudocódigo:**
 
-```pseudocode
-Enquanto (condição_logica) Faca
+**Estrutura em Portugol:**
+```portugol
+enquanto (condicao_logica) faca
   // Bloco de código a ser repetido
   // enquanto a condição for VERDADEIRA.
+fimenquanto
+```
 
-  // É crucial que algo aqui dentro
-  // possa, eventualmente, tornar a condição FALSA.
-FimEnquanto
-
-//Exemplo Prático
-
-Algoritmo "ContagemSimples"
-Var
-  contador: Inteiro
-
-Inicio
-  // 1. Inicialização: O contador começa em 1.
+**Exemplo prático:**
+```portugol
+algoritmo "ContagemSimples"
+var
+  contador: inteiro
+inicio
   contador <- 1
-
-  // 2. Condição: O laço continua ENQUANTO o contador for menor ou igual a 5.
-  Enquanto (contador <= 5) Faca
-    // 3. Ação: Exibe o valor atual do contador.
-    Escreva(contador)
-
-    // 4. Incremento: Aumenta o valor do contador em 1.
-    // Esta é a parte mais importante para evitar um laço infinito!
+  enquanto (contador <= 5) faca
+    escreva(contador)
     contador <- contador + 1
-  FimEnquanto
-
-  Escreva("Fim da contagem!")
-FimAlgoritmo
+  fimenquanto
+  escreva("Fim da contagem!")
+fimalgoritmo
 ```
 
 #### Exemplo 2: Validação de Entrada do Usuário
@@ -55,32 +44,22 @@ Este é o cenário perfeito para o laço `Enquanto`: quando a repetição depend
 
 **Problema:** Crie um algoritmo que peça ao usuário para digitar uma senha. O programa só deve parar de pedir a senha quando o usuário digitar o valor correto, que é "1234".
 
-```pseudocode
-Algoritmo "ValidacaoDeSenha"
-Var
-  senha_correta: Texto
-  senha_digitada: Texto
 
-Inicio
-  // Definimos a senha que o sistema espera
+```portugol
+algoritmo "ValidacaoDeSenha"
+var
+  senha_correta: texto
+  senha_digitada: texto
+inicio
   senha_correta <- "1234"
-
-  // Pedimos a senha pela primeira vez, antes de entrar no laço
-  Escreva("Digite a senha para acessar: ")
-  Leia(senha_digitada)
-
-  // O laço continua ENQUANTO a senha digitada for DIFERENTE da correta
-  Enquanto (senha_digitada <> senha_correta) Faca
-    // Ação: Informa que a senha está errada e pede novamente
-    Escreva("Acesso negado. Tente novamente: ")
-    Leia(senha_digitada)
-  FimEnquanto
-
-  // Esta linha só será alcançada quando o laço terminar,
-  // ou seja, quando a senha correta for digitada.
-  Escreva("---")
-  Escreva("Senha correta! Acesso permitido.")
-FimAlgoritmo
+  escreva("Digite a senha para acessar: ")
+  leia(senha_digitada)
+  enquanto (senha_digitada <> senha_correta) faca
+    escreva("Acesso negado. Tente novamente: ")
+    leia(senha_digitada)
+  fimenquanto
+  escreva("---\nSenha correta! Acesso permitido.")
+fimalgoritmo
 ```
 
 ### 5.2 O Laço Contado (`Para...Faca`)
@@ -89,30 +68,25 @@ Enquanto o laço `Enquanto` é ideal para repetições onde não sabemos o núme
 
 Ele é mais seguro para contagens porque a **inicialização**, a **condição** e o **incremento** da variável de controle são definidos em uma única linha, tornando muito mais difícil criar um laço infinito acidentalmente.
 
-**Estrutura em Pseudocódigo:**
 
-```pseudocode
-Para variavel De valor_inicial Ate valor_final Faca
+**Estrutura em Portugol:**
+```portugol
+para variavel de valor_inicial ate valor_final faca
   // Bloco de código a ser repetido.
-  // A 'variavel' é automaticamente incrementada a cada volta.
-FimPara
+fimpara
+```
 
-// Exemplo Prático
-
-Algoritmo "ContagemComPara"
-Var
-  contador: Inteiro
-
-Inicio
-  // A inicialização (contador começa em 1),
-  // a condição (vai ATÉ 5) e o incremento (passo de 1 em 1)
-  // estão todos definidos nesta única linha.
-  Para contador De 1 Ate 5 Faca
-    Escreva(contador)
-  FimPara
-
-  Escreva("Fim da contagem!")
-FimAlgoritmo
+**Exemplo prático:**
+```portugol
+algoritmo "ContagemComPara"
+var
+  contador: inteiro
+inicio
+  para contador de 1 ate 5 faca
+    escreva(contador)
+  fimpara
+  escreva("Fim da contagem!")
+fimalgoritmo
 ```
 
 ### 5.3 Contadores e Acumuladores
@@ -132,29 +106,22 @@ A lógica é sempre a mesma:
 
 **Problema:** Crie um algoritmo que leia 5 números e, ao final, diga quantos deles eram pares.
 
-```pseudocode
-Algoritmo "ContaNumerosPares"
-Var
-  i, valor, qtde_pares: Inteiro
 
-Inicio
-  // 1. Inicializamos o contador de pares com zero
+```portugol
+algoritmo "ContaNumerosPares"
+var
+  i, valor, qtde_pares: inteiro
+inicio
   qtde_pares <- 0
-
-  Para i De 1 Ate 5 Faca
-    Escreva("Digite o ", i, "º valor: ")
-    Leia(valor)
-
-    // Verifica se o resto da divisão por 2 é zero
-    Se (valor % 2 = 0) Então
-      // 2. Se for par, incrementamos nosso contador
+  para i de 1 ate 5 faca
+    escreva("Digite o ", i, "º valor: ")
+    leia(valor)
+    se (valor % 2 = 0) entao
       qtde_pares <- qtde_pares + 1
-    FimSe
-  FimPara
-
-  Escreva("---")
-  Escreva("Você digitou ", qtde_pares, " números pares.")
-FimAlgoritmo
+    fimse
+  fimpara
+  escreva("---\nVocê digitou ", qtde_pares, " números pares.")
+fimalgoritmo
 ```
 
 # Acumuladores
@@ -174,29 +141,35 @@ A lógica é muito parecida com a do contador:
 
 #### Snippet de código
 
+
 ```portugol
-Algoritmo "SomaNotas"
-Var
-  i: Inteiro
-  nota, soma_notas: Real
-
-Inicio
-  // 1. Inicializamos o acumulador com zero
+algoritmo "SomaNotas"
+var
+  i: inteiro
+  nota, soma_notas: real
+inicio
   soma_notas <- 0.0
-
-  Para i De 1 Ate 4 Faca
-    Escreva("Digite a ", i, "ª nota: ")
-    Leia(nota)
-
-    // 2. Acumulamos a nota lida na variável 'soma_notas'
+  para i de 1 ate 4 faca
+    escreva("Digite a ", i, "ª nota: ")
+    leia(nota)
     soma_notas <- soma_notas + nota
-  FimPara
-
-  Escreva("---")
-  Escreva("A soma de todas as notas é: ", soma_notas)
-FimAlgoritmo
+  fimpara
+  escreva("---\nA soma de todas as notas é: ", soma_notas)
+fimalgoritmo
 ```
 
-[!NOTE]
-A principal diferença é que um contador sempre incrementa um valor fixo (geralmente +1),  
-enquanto um acumulador incrementa um valor variável (o valor que está sendo analisado a cada volta do laço).
+
+> [!NOTE]
+> A principal diferença é que um contador sempre incrementa um valor fixo (geralmente +1), enquanto um acumulador incrementa um valor variável (o valor que está sendo analisado a cada volta do laço).
+
+---
+
+## Resumo
+
+- **Laço enquanto:** repete enquanto a condição for verdadeira.
+- **Laço para:** repete um número fixo de vezes.
+- **Contador:** soma +1 a cada evento.
+- **Acumulador:** soma valores variáveis.
+
+> [!TIP]
+> Use laços para automatizar tarefas repetitivas e processar grandes volumes de dados!

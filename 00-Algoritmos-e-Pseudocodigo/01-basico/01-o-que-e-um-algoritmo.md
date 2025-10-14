@@ -2,27 +2,27 @@
 
 ## Conceito Central
 
-A forma mais simples de pensar em um algoritmo é compará-lo a uma **receita de bolo**. Ele nos dá os ingredientes (entradas), o passo a passo (processamento) e o resultado final (saída).
+Um **algoritmo** pode ser comparado a uma receita de bolo: ele define os ingredientes (entradas), o passo a passo (processamento) e o resultado final (saída).
 
 > [!NOTE]
-> A definição formal é: Uma sequência **finita** de **passos bem definidos** e lógicos para resolver um problema ou executar uma tarefa.
+> **Definição formal:** Uma sequência **finita** de **passos bem definidos** e lógicos para resolver um problema ou executar uma tarefa.
 
-O objetivo de um bom algoritmo é ser uma "receita" tão clara que não haja margem para dúvidas, permitindo que um computador (que não tem intuição) a execute sem erros.
-
----
-
-## ✨ Por que Algoritmos são Importantes?
-
-Estudar algoritmos não é apenas um exercício acadêmico. Eles são a base de toda a tecnologia que usamos e nos ensinam a pensar de forma estruturada. Os principais benefícios são:
-
-- **Eficiência:** Aprender a criar algoritmos nos ensina a encontrar a solução mais rápida e econômica (em termos de uso de memória e processamento) para um problema.
-- **Escalabilidade:** Um algoritmo bem-feito funciona bem não só para 10 itens, mas também para 10 milhões.
-- **Clareza e Manutenção:** Um algoritmo claro é mais fácil de ser entendido, corrigido e melhorado no futuro, tanto por você quanto por outros desenvolvedores.
-- **Reutilização:** Muitas vezes, um algoritmo criado para um problema pode ser adaptado para resolver outros problemas similares.
+O objetivo de um bom algoritmo é ser tão claro que não haja margem para dúvidas, permitindo que um computador (que não tem intuição) o execute sem erros.
 
 ---
 
-## 🔑 Propriedades Essenciais
+## Por que Algoritmos são Importantes?
+
+Estudar algoritmos é fundamental porque:
+
+- **Eficiência:** Permite encontrar soluções rápidas e econômicas para problemas.
+- **Escalabilidade:** Um bom algoritmo funciona para poucos ou muitos dados.
+- **Clareza e Manutenção:** Algoritmos claros são mais fáceis de entender, corrigir e melhorar.
+- **Reutilização:** Um algoritmo pode ser adaptado para resolver problemas similares.
+
+---
+
+## Propriedades Essenciais de um Algoritmo
 
 Todo algoritmo válido deve possuir cinco características fundamentais:
 
@@ -36,48 +36,68 @@ Todo algoritmo válido deve possuir cinco características fundamentais:
 
 ---
 
-## 💡 Exemplos de Algoritmos no Dia a Dia
+## Exemplos de Algoritmos no Dia a Dia
 
-Nós usamos e somos impactados por algoritmos o tempo todo, mesmo sem perceber:
+Você encontra algoritmos em:
 
-- **GPS (Waze, Google Maps):** Usa algoritmos para calcular a rota mais curta ou mais rápida entre dois pontos.
-- **Feed de Redes Sociais:** Um algoritmo decide quais posts e stories mostrar para você, baseado nos seus interesses.
-- **Streaming (Netflix, Spotify):** Algoritmos de recomendação sugerem filmes e músicas que você provavelmente vai gostar.
-- **Busca do Google:** Um algoritmo extremamente complexo que ranqueia bilhões de páginas para te dar a resposta mais relevante.
+- **GPS (Waze, Google Maps):** Calcula a rota mais curta ou rápida.
+- **Feed de Redes Sociais:** Decide quais posts mostrar para você.
+- **Streaming (Netflix, Spotify):** Sugere filmes e músicas.
+- **Busca do Google:** Rankeia bilhões de páginas para te dar a resposta mais relevante.
 
 ---
 
-## 📝 Exemplos em Pseudocódigo
+## Exemplos em Portugol
 
 ### Exemplo 1: Cálculo Matemático
 
-Este exemplo clássico demonstra o fluxo básico de entrada, processamento e saída.
+Este exemplo mostra o fluxo básico de entrada, processamento e saída.
 
-"CalcularMedia"
-
-```pseudocode
-Algoritmo "CalcularMedia"
-Var
-  numero1: Inteiro
-  numero2: Inteiro
-  media: Real
-Inicio
-  Escreva("Digite o primeiro número: ")
-  Leia(numero1)
-  Escreva("Digite o segundo número: ")
-  Leia(numero2)
+```portugol
+algoritmo "CalcularMedia"
+var
+  numero1: inteiro
+  numero2: inteiro
+  media: real
+inicio
+  escreva("Digite o primeiro número: ")
+  leia(numero1)
+  escreva("Digite o segundo número: ")
+  leia(numero2)
   media <- (numero1 + numero2) / 2
-  Escreva("A média é: ", media)
-FimAlgoritmo
+  escreva("A média é: ", media)
+fimalgoritmo
 ```
 
 ### Exemplo 2: Lógica (Não-numérico)
 
-Algoritmos não são apenas sobre números. Eles são sobre seguir uma lógica para tomar decisões.
+Algoritmos não são apenas sobre números, mas também sobre lógica e tomada de decisão.
 
-"VerificarGuardaChuva"
+```portugol
+algoritmo "VerificarGuardaChuva"
+var
+  vai_chover: logico
+inicio
+  escreva("Vai chover hoje? (verdadeiro/falso): ")
+  leia(vai_chover)
+  se (vai_chover) entao
+    escreva("Leve o guarda-chuva!")
+  senao
+    escreva("Pode sair sem guarda-chuva.")
+  fimse
+fimalgoritmo
+```
 
-```pseudocode
+---
+
+## Resumo
+
+- Algoritmo é uma sequência de passos claros para resolver um problema.
+- Deve ser finito, definido, ter entradas, saídas e ser efetivo.
+- Está presente em diversas situações do dia a dia e é a base da programação.
+
+> [!TIP]
+> Sempre escreva algoritmos de forma clara e sem ambiguidades!
 Algoritmo "VerificarGuardaChuva"
 Var
 esta_chovendo: Logico

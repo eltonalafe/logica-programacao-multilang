@@ -15,25 +15,26 @@ Pense em uma **variável** como uma "caixa" etiquetada, onde você pode guardar 
 1.  **Nome:** Um identificador único (ex: `idade`, `nome_usuario`, `preco_final`).
 2.  **Tipo de Dado:** Define que tipo de informação a variável pode guardar (veremos os tipos em detalhes na próxima seção).
 
-Em pseudocódigo, nós **declaramos** uma variável antes de usá-la, informando seu nome e tipo.
 
-**Sintaxe:**
-`DECLARE nome_da_variavel: TIPO`
+Em Portugol, declaramos uma variável antes de usá-la, informando seu nome e tipo.
 
 **Exemplo:**
-`DECLARE idade: INTEIRO`
-`DECLARE nome_cliente: TEXTO`
+```portugol
+var
+  idade: inteiro
+  nome_cliente: texto
+```
 
 #### Constantes
 
 Uma **constante** é parecida com uma variável, mas com uma regra crucial: uma vez que um valor é atribuído a ela, ele **não pode mais ser alterado**. Elas são usadas para valores fixos que não devem mudar, como o valor de Pi (3.14159) ou o número máximo de tentativas em um jogo.
 
-**Sintaxe:**
-`CONSTANTE NOME_DA_CONSTANTE = VALOR`
 
 **Exemplo:**
-`CONSTANTE PI = 3.14159`
-`CONSTANTE NUMERO_MAX_TENTATIVAS = 3`
+```portugol
+constante PI = 3.14159
+constante NUMERO_MAX_TENTATIVAS = 3
+```
 
 ### 3.2 Tipos de Dados Primitivos
 
@@ -41,12 +42,13 @@ Quando declaramos uma variável, precisamos informar ao computador que "tipo" de
 
 Os quatro tipos primitivos essenciais são:
 
-| Tipo        | Descrição                                                                                             | Exemplos                                      |
-| :---------- | :---------------------------------------------------------------------------------------------------- | :-------------------------------------------- |
-| **Inteiro** | Representa números inteiros, positivos ou negativos, sem casas decimais.                              | `-10`, `0`, `150`, `2025`                     |
-| **Real**    | Representa números que podem ter casas decimais (também conhecidos como ponto flutuante).             | `-2.5`, `0.0`, `3.14159`, `99.99`             |
-| **Texto**   | Representa uma sequência de caracteres (letras, números e símbolos). Geralmente delimitado por aspas. | `"Olá, mundo!"`, `"email@teste.com"`, `"123"` |
-| **Lógico**  | Representa um de dois valores possíveis: verdadeiro ou falso. É a base para a tomada de decisões.     | `VERDADEIRO`, `FALSO`                         |
+
+| Tipo      | Descrição                                                        | Exemplos                  |
+| :-------- | :--------------------------------------------------------------- | :------------------------ |
+| **inteiro** | Números inteiros, positivos ou negativos, sem casas decimais.     | `-10`, `0`, `150`, `2025` |
+| **real**    | Números que podem ter casas decimais (ponto flutuante).           | `-2.5`, `0.0`, `3.14`     |
+| **texto**   | Sequência de caracteres (letras, números, símbolos).              | `"Olá"`, `"123"`          |
+| **logico**  | Dois valores possíveis: verdadeiro ou falso.                      | `verdadeiro`, `falso`     |
 
 > [!IMPORTANT]
 > Definir o tipo correto para uma variável é importante para evitar erros. Por exemplo, o programa não pode realizar uma operação matemática com uma variável do tipo **Texto**, e saber o tipo de dado ajuda o computador a otimizar o uso de memória.
@@ -55,73 +57,64 @@ Os quatro tipos primitivos essenciais são:
 
 Um algoritmo raramente trabalha de forma isolada. Ele precisa interagir com o usuário, seja para receber informações ou para mostrar resultados. Essa comunicação é feita através de comandos de Entrada (leitura de dados) e Saída (exibição de dados).
 
-#### Entrada de Dados (`Leia`)
 
-O comando de entrada pausa a execução do algoritmo e espera que o usuário digite alguma informação. O valor digitado pelo usuário é então armazenado em uma variável que especificamos. A palavra-chave comum para isso é `Leia`.
+### Entrada de Dados (`leia`)
+
+O comando de entrada pausa a execução do algoritmo e espera que o usuário digite alguma informação. O valor digitado é armazenado em uma variável.
 
 > [!NOTE]
-> Uma boa prática é sempre exibir uma mensagem para o usuário (com o comando `Escreva`) antes de usar o comando `Leia`, para que ele saiba qual informação deve digitar.
+> Sempre exiba uma mensagem para o usuário (com `escreva`) antes de usar `leia`, para que ele saiba o que digitar.
 
 **Exemplo:**
-
-```pseudocode
-DECLARE nome_usuario: TEXTO
-
-// 1. Pede a informação para o usuário
-Escreva("Por favor, digite o seu nome: ")
-
-// 2. Pausa o programa e espera o usuário digitar.
-// O valor digitado será guardado na variável 'nome_usuario'
-Leia(nome_usuario)
+```portugol
+var
+  nome_usuario: texto
+inicio
+  escreva("Por favor, digite o seu nome: ")
+  leia(nome_usuario)
+fimalgoritmo
 ```
 
-#### Saída de Dados (`Escreva`)
 
-O comando de saída é usado para exibir informações na tela. Podemos mostrar textos fixos, o conteúdo de variáveis, ou uma combinação de ambos. A palavra-chave mais comum em pseudocódigo para isso é `Escreva`.
+### Saída de Dados (`escreva`)
 
-**Exemplos:**
+O comando de saída exibe informações na tela. Pode mostrar textos fixos, o conteúdo de variáveis ou ambos.
 
-```pseudocode
-// Exibindo uma mensagem de texto simples
-Escreva("Seja bem-vindo ao programa!")
-
-// Exibindo o conteúdo de uma variável
-DECLARE nome_usuario: TEXTO
-nome_usuario <- "Elton"
-Escreva(nome_usuario)
-
-// Combinando texto e variáveis
-Escreva("O nome do usuário é: ", nome_usuario)
+**Exemplo:**
+```portugol
+escreva("Bem-vindo ao programa!")
+escreva("O nome do usuário é: ", nome_usuario)
 ```
+
 
 #### Exemplo Prático Completo
 
-```pseudocode
-Algoritmo "CalculadoraDeIdade"
-
-// Seção de declaração de constantes e variáveis
-CONSTANTE ANO_ATUAL = 2025
-Var
-  nome_usuario: Texto
-  ano_nascimento: Inteiro
-  idade_aproximada: Inteiro
-
-// Início do algoritmo
-Inicio
-
-  // --- Entrada de Dados ---
-  Escreva("Seja bem-vindo(a)! Qual é o seu nome? ")
-  Leia(nome_usuario)
-
-  Escreva("Olá, ", nome_usuario, "! Agora, por favor, digite o seu ano de nascimento: ")
-  Leia(ano_nascimento)
-
-  // --- Processamento ---
+```portugol
+algoritmo "CalculadoraDeIdade"
+constante ANO_ATUAL = 2025
+var
+  nome_usuario: texto
+  ano_nascimento: inteiro
+  idade_aproximada: inteiro
+inicio
+  escreva("Seja bem-vindo(a)! Qual é o seu nome? ")
+  leia(nome_usuario)
+  escreva("Olá, ", nome_usuario, "! Agora, por favor, digite o seu ano de nascimento: ")
+  leia(ano_nascimento)
   idade_aproximada <- ANO_ATUAL - ano_nascimento
-
-  // --- Saída de Dados ---
-  Escreva("Obrigado pelas informações.")
-  Escreva("Com base no ano atual (", ANO_ATUAL, "), sua idade aproximada é de ", idade_aproximada, " anos.")
-
-FimAlgoritmo
+  escreva("Obrigado pelas informações.\n")
+  escreva("Com base no ano atual (", ANO_ATUAL, "), sua idade aproximada é de ", idade_aproximada, " anos.")
+fimalgoritmo
 ```
+
+---
+
+## Resumo
+
+- **Variáveis** armazenam dados que podem mudar.
+- **Constantes** armazenam valores fixos.
+- **Tipos primitivos**: inteiro, real, texto, lógico.
+- **Entrada**: `leia` | **Saída**: `escreva`.
+
+> [!TIP]
+> Sempre declare variáveis e constantes antes de usá-las e escolha o tipo de dado adequado!
