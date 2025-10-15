@@ -1,0 +1,14 @@
+{
+  "name": "implementacao-java",
+  "version": "1.0.0",
+  "description": "Exemplos de lógica e algoritmos em Java.",
+  "main": "index.java",
+  "scripts": {},
+  "keywords": [
+    "algoritmos",
+    "logica",
+    "java"
+  ],
+  "author": "Elton Alafe",
+  "license": "MIT"
+}

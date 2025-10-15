@@ -1,0 +1,16 @@
+{
+  "name": "implementacao-javascript",
+  "version": "1.0.0",
+  "description": "Exemplos de lógica e algoritmos em JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node 01-basico/01-variaveis-e-io.js"
+  },
+  "keywords": [
+    "algoritmos",
+    "logica",
+    "javascript"
+  ],
+  "author": "Elton Alafe",
+  "license": "MIT"
+}

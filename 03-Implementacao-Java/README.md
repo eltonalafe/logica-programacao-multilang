@@ -19,6 +19,33 @@ Este módulo traz a implementação prática dos conceitos de lógica e algoritm
 
 ---
 
+## 🧪 Como rodar os testes unitários
+
+Este projeto utiliza o framework [JUnit 5](https://junit.org/junit5/) para testes automatizados. Você pode rodar os testes tanto pelo seu IDE favorito (IntelliJ, VS Code, Eclipse) quanto pelo terminal usando Maven ou Gradle.
+
+1. Os testes ficam na pasta `test/` e seguem o padrão `*Test.java`.
+2. Para rodar todos os testes pelo terminal, navegue até esta pasta do projeto:
+
+```bash
+cd 03-Implementacao-Java
+```
+
+3. Com Maven (recomendado):
+
+```bash
+mvn test
+```
+
+4. Com Gradle (se configurado):
+
+```bash
+gradle test
+```
+
+5. Ou rode os testes diretamente pelo seu IDE.
+
+---
+
 ## 📚 Conteúdo
 
 - [01 - Básico](./01-basico/)

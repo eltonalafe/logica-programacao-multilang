@@ -1,0 +1,14 @@
+{
+  "name": "implementacao-python",
+  "version": "1.0.0",
+  "description": "Exemplos de lógica e algoritmos em Python.",
+  "main": "index.py",
+  "scripts": {},
+  "keywords": [
+    "algoritmos",
+    "logica",
+    "python"
+  ],
+  "author": "Elton Alafe",
+  "license": "MIT"
+}

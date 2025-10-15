@@ -1,0 +1,14 @@
+{
+  "name": "implementacao-typescript",
+  "version": "1.0.0",
+  "description": "Exemplos de lógica e algoritmos em TypeScript.",
+  "main": "index.ts",
+  "scripts": {},
+  "keywords": [
+    "algoritmos",
+    "logica",
+    "typescript"
+  ],
+  "author": "Elton Alafe",
+  "license": "MIT"
+}

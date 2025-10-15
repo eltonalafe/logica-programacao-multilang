@@ -19,6 +19,40 @@ Este módulo traz a implementação prática dos conceitos de lógica e algoritm
 
 ---
 
+## 🧪 Como rodar os testes unitários
+
+Este projeto utiliza o framework [Jest](https://jestjs.io/) para testes automatizados.
+
+1. Instale as dependências de desenvolvimento (se ainda não fez):
+
+```bash
+npm install --save-dev jest @types/jest ts-jest
+```
+
+2. Para rodar todos os testes:
+
+```bash
+npx jest
+```
+
+Ou, se preferir, adicione ao package.json:
+
+```json
+"scripts": {
+  "test": "jest"
+}
+```
+
+E rode:
+
+```bash
+npm test
+```
+
+3. Os testes ficam na pasta `test/` e seguem o padrão `*.test.ts`.
+
+---
+
 ## 📚 Conteúdo
 
 - [01 - Básico](./01-basico/)
